@@ -36,7 +36,7 @@ lines(epc2$DateTime, epc2$Sub_metering_3, col='blue')
 legend('topright', lty=c(1,1,1), legend=c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3'), col=c('black', 'red', 'blue'))
 dev.off()
 
-## Plot 2: line graph Global Active Power
+## Plot 4: all plots combined
 png(filename='plot4.png', width = 480, height = 480)
 par(mfrow=c(2,2))
 plot(epc2$DateTime, epc2$Global_active_power, type='S', ylab='Global Active Power (kilowatts)', xlab = '')
